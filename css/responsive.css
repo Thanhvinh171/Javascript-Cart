@@ -1,0 +1,131 @@
+@media screen and (max-width: 1080px){
+    .card{
+        width: 47%;
+        margin-bottom: 17px;
+    }
+}
+@media screen and (max-width: 856px) {
+    .slide img{
+        width: 600px;
+        height: 440px;
+        margin-top: 25px;
+    }
+
+    .card{
+        width: 46%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    span{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .slideshow-container{
+        display: none;
+    }
+
+    .card{
+        width: 47%;
+        margin-bottom: 15px;
+    }
+
+    .image img{
+        width: 120px;
+    }
+
+    .header__nav__cart__number{
+        top: -10px;
+        margin-left: 30px;
+    }
+
+    .product-text h2{
+        font-size: 23px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    #menu-bar{
+        display: block;
+        width: 15%;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -120%;
+        width: 100%;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+    }
+    .navbar a{
+        font-size: 23px;
+        background: #fff;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin: 1rem;
+        display: block;
+        text-align: center;
+    }
+    header .navbar.active{
+        left: 0;
+    }
+
+    .content-form img{
+        width: 80%;
+    }
+
+    .btn-back{
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid orangered;
+        background-color: #fff;
+        color: orangered;
+    }
+    .order__empty img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    .card{
+        width: 90%;
+    }
+
+    .logo img{
+        display: none;
+    }
+
+    .btn-search{
+        display: none;
+    }
+
+    .image img{
+        width: 150px;
+    }
+    
+    .btn{
+        padding: 10px 50px;
+        margin-top: 10px;
+    }
+    .icons a i{
+        font-size: 17px;
+    }
+    .header__nav__cart__number{
+        top: -10px;
+        margin-left: 30px;
+    }
+
+    p{
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+
+    .product-text h2{
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/dialog.css">
+    <link rel="stylesheet" href="./css/bills.css">
+    <link rel="shortcut icon" href="./img/nike.png">
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Nike</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header id="header">
+            <div id="menu-bar" class="fa fa-bars"></div>
+            <a href="#" class="logo">
+                <img src="./img/nike.png" alt="">
+            </a>
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="#">Product</a>
+                <a href="./bills.html" id="bills">Bills</a>
+            </nav>
+            <div class="icons">
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Search...">
+                </div>
+                <a href="#" id="cart" onclick="renderCart()">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="header__nav__cart__number"></span>
+                </a>
+            </div>
+        </header>
+    
+        <!-- Slide -->
+        <div class="slideshow-container" id="slide">
+            <div class="slide">
+                <img src="./img/slide/slide1.png">
+                <div class="text">NIKE SPORT SHOES</div>
+                <p> A shoe is an item of footwear intended to protect and comfort the human foot. They are often worn with a sock. Shoes are also used as an item of decoration and fashion.
+                </p>
+            </div>
+            <div class="slide">
+                <img src="./img/slide/slide2.png">
+                <div class="text">NIKE SPORT SHOES</div>
+                <p> A shoe is an item of footwear intended to protect and comfort the human foot. They are often worn with a sock. Shoes are also used as an item of decoration and fashion.
+                </p>
+            </div>
+            <div class="slide">
+                <img src="./img/slide/slide3.png">
+                <div class="text">NIKE SPORT SHOES</div>
+                <p> A shoe is an item of footwear intended to protect and comfort the human foot. They are often worn with a sock. Shoes are also used as an item of decoration and fashion.
+                </p>
+            </div>
+            <div class="slide">
+                <img src="./img/slide/slide4.png">
+                <div class="text">NIKE SPORT SHOES</div>
+                <p> A shoe is an item of footwear intended to protect and comfort the human foot. They are often worn with a sock. Shoes are also used as an item of decoration and fashion.
+                </p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <br>
+        <div style="text-align:center; margin-bottom: 40px;">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        <!-- end slide -->
+        <!-- List Product -->
+        <span id="list-product">LIST PRODUCT</span>
+        <div class="product" id="product">
+        </div>
+        <!-- Cart -->
+        <div class="form-cart" id="cart-form" style="display: none;">
+            <div class="cart-content" id="cart-content">
+                <h2>PRODUCT NAME</h2>
+                <table id="table-cart">
+
+                </table>
+            </div>
+            <div class="total" id="total">
+                
+            </div>
+            <div class="button">
+                <button class="btn-back" id="btn-back-home">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Shopping
+                </button>
+                <button class="btn-buy" id="btn-buy">Buy</button>
+            </div>
+        </div>
+        <!-- No Product in Cart -->
+        <div class="form" id="form-no-product">
+            <div class="content-form">
+                <img src="./img/empty.png">
+            </div>
+            <div class="info-cart">
+                <button class="btn-back" id="btn-back">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Shopping
+                </button>
+            </div>
+        </div>
+        <!-- Dialog -->
+        <div class="modal" id="modal">
+            <form action="" id="confirm" class="confirm">
+                <div class="form-group" id="form-group">
+                    <label for="" class="form-label">Họ và tên <p style="color: red;"> *</p></label>
+                    <div class="fullname">
+                        <input type="text" name="firstname" id="first-name" placeholder="Họ">
+                        <input type="text" name="lastname" id="last-name" placeholder="Tên">
+                    </div>
+                    <span class="form-message" id="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Email <p style="color: red;"> *</p></label>
+                    <input type="text" name="email" id="email" placeholder="Email">
+                    <span class="form-message" id="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Số điện thoại <p style="color: red;"> *</p></label>
+                    <input type="text" name="phone" id="phone-number" placeholder="Số điện thoại">
+                    <span class="form-message" id="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Địa chỉ <p style="color: red;"> *</p></label>
+                    <div class="division">
+                        <select name="province" id="province"></select>
+                        <select name="district" id="district"></select>
+                        <select name="ward" id="ward"></select>
+                    </div>
+                    <span class="form-message" id="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Lời nhắn <p style="color: red;"> *</p></label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <span class="form-message" id="error-message"></span>
+                </div>
+                <div class="confirm-buy">
+                    <button class="btn-cancel" id="btn-cancel">Hủy</button>
+                    <button class="btn-confirm">Xác nhận</button>
+                </div>
+            </form>
+        </div>
+        <!-- end dialog -->
+        </div>
+    </div>
+</body>
+<script src="./js/slide.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/cart.js"></script>
+<script src="./js/form.js"></script>
+<script src="./js/validator.js"></script>
+<script src="./js/order.js"></script>
+<script>
+    Validator({
+    form: '.confirm',
+    formGroupSelector: '.form-group',
+    errorSelector: '.form-message',
+    rules: [
+        Validator.isRequired('#first-name'),
+        Validator.isName('#first-name'),
+        Validator.isRequired('#last-name'),
+        Validator.isName('#last-name'),
+        Validator.isRequired('#email'),
+        Validator.isEmail('#email'),
+        Validator.isRequired('#phone-number'),
+        Validator.isPhoneNumber('#phone-number'),   
+        Validator.isRequired('#province'),
+        Validator.isRequired('#message')
+    ]
+})
+</script>
+</html>

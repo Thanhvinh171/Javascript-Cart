@@ -1,0 +1,167 @@
+
+.btn-back-home{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    background-color: #fff;
+    color: orangered;
+    float: right;
+    margin-left: 20px;
+}
+
+.btn-back-home:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+.btn-bills{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    background-color: #fff;
+    color: orangered;
+    margin-top: -30px;
+}
+
+.btn-bills:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+.details{
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-details{
+    background-color: #fff;
+    color: #6c14d0;
+    margin: 0 auto;
+    display: flex;
+}
+
+.btn-details:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#table-details{
+    width: 80%;
+}
+
+#table-details tr{
+    width: 100%;
+}
+
+
+#table-details tr th{
+    font-size: 15px;
+    background-color: #7393B3;
+    color: black;
+    width: 10%;
+}
+
+
+#table-details tr td{
+    font-size: 15px;
+}
+
+.show {
+    display: block !important;
+}
+
+#caret-down{
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.order__container {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.order .grid-col-7,
+.order .grid-col-5 {
+  display: grid;
+  padding: 10px;
+  gap: 5px;
+}
+
+.order .grid-col-7 {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: auto 15% 15% 10% 10% 15% 10%;
+    border-top: 1px solid #c9c9c977;
+    font-size: 17px;
+}
+
+.order .grid-col-5 {
+    grid-template-columns: auto 20% 20% 20% 20%;
+    border-bottom: 1px solid #c9c9c977;
+    font-size: 15px;
+}
+
+.order__header {
+    font-weight: 500;
+    background-color: coral;
+    color: #fff;
+    font-size: 17px;
+}
+
+.order__detail__header {
+    font-weight: 500;
+    background-color: #6699CC;
+    color: white;
+}
+  
+.order__item,
+.order__detail__item {
+    align-items: center;
+}
+  
+.order__detail__item img {
+    width: 50px;
+    height: 50px;
+}
+  
+.order__table__detail {
+    display: none;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 0 100px 20px;
+    border: 1px solid #0000001f;
+    border-bottom: 0;
+    border-radius: 5px;
+}
+  
+.order__btnDetail {
+    color: blue;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 10px;
+    background: transparent;
+    box-shadow: none;
+}
+  
+.order__btnRefund {
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    color: red;
+}
+
+.order__empty{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.order__empty p{
+    font-size: 17px;
+}
+
+
+  

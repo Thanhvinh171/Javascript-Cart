@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/bills.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon" href="./img/nike.png">
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    <title>Nike</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <div id="menu-bar" class="fa fa-bars"></div>
+            <a href="./index.html" class="logo">
+                <img src="./img/nike.png" alt="">
+            </a>
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="#">Product</a>
+                <a href="./bills.html" id="bills">Bills</a>
+            </nav>
+            <div class="icons">
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Search...">
+                </div>
+                <a href="#" id="cart-bills" onclick="renderCart()">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="header__nav__cart__number"></span>
+                </a>
+            </div>
+        </header>
+        
+        <div class="order">
+            <div class="order__container">
+                <div class="order__header grid-col-7">
+                    <div>ID</div>
+                    <div>Customer Name</div>
+                    <div>Date</div>
+                    <div>Amount</div>
+                    <div>Total Amount</div>
+                    <div>Total Price</div>
+                    <div>Return</div>
+                </div>
+                <div class="order__body"> </div>
+            </div>
+            <div class="order__empty">
+                
+            </div>
+            <a class="info-cart" href="./index.html">
+                <button class="btn-back" id="btn-back">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Shopping
+                </button>
+            </a>
+        </div>
+
+    </div>
+</body>
+<script src="./js/app.js"></script>
+<script src="./js/order.js"></script>
+<!-- <script src="./js/index.js"></script> -->
+<script src="./js/common.js"></script>
+<!-- <script src="./js/cart.js"></script> -->
+</html>
