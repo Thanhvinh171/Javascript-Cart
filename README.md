@@ -1,6 +1,8 @@
 To run project: 
 settings: terminal -> npm install
 run: cd json-server -> npm run dev
+
+
 Một vài giao diện chính:
 ![image](https://user-images.githubusercontent.com/84011116/218679792-b6ac788c-6c95-4ae2-8058-cc906f97f673.png)
 ![image](https://user-images.githubusercontent.com/84011116/218679885-49a60a3d-2ea2-40b4-9918-9201cbe0ee1d.png)
